@@ -1,0 +1,10 @@
+<h1>Tasks#new</h1>
+<p>Find me in app/views/tasks/new.html.erb</p>
+<%= form_for(@tasks) do |t| %>
+  <h2>New Message</h2>
+  <%= t.label :title %>
+  <%= t.text_field :title %>
+  <%= t.label :message %>
+  <%= t.text_field :message %>
+  <%= t.submit %>
+<% end %>
